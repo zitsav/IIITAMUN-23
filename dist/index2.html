@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="max-w-9xl py-2 bg-gray-200 navBar relative top-0">
+        <nav class="border-gray-200">
+            <div class="container mx-auto min-w-full flex flex-wrap items-center justify-between navBar-wrap">
+                <a href="#" class="flex">
+                    <img src="../src/images/munlogo.png" alt="" class="h-16 w-16 mr-3">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap">IIITA-MUN</span>
+                </a>
+                <button data-collapse-toggle="mobile-menu" type="button"
+                    class="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
+                    aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
+                    <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+                        <li>
+                            <a href="index.html"
+                                class="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded focus:outline-none text-xl"
+                                aria-current="page">home</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto text-xl">Committees<svg
+                                    class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
+                                <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">CCC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Lok Sabha</a>
+                                    </li>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Apply</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="home w-full h-[90vh]" id="home">
+        <div class="home-wrap w-full h-[90vh] flex flex-col justify-center">
+            <img src="#" alt="" class="home-img">
+            <div class="home-content flex flex-col justify-center items-center" style="color: aliceblue;">
+                <a href=""><img src="../src/images/logo.png" alt="" class="home-logo"></a>
+                <h1 class="text-5xl my-5">IITIA Model United Nations</h1>
+                <p class="w-10/12 text-center text-xl my-5 font-bold text-black">Effervescence proudly presents to you all the 5th edition of
+                    IIIT Allahabad Model United Nations. Welcome to the official website of IIITA-MUN'23.
+                </p>
+                <!-- <button class=" px-10 py-2 border">Effervescence'23</button> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="sec w-full min-h-fit flex justify-center">
+        <div class="sec-wrap w-[88%] py-8 ">
+            <div class="sec-content py-2 flex flex-col items-center justify-center">
+                <div class="sec-upper mb-6 ">
+                    <h2 class="text-4xl p-2 pb-3">Secretariat</h2>
+                </div>
+                <div class="card-grid w-[96%] grid grid-cols-3 gap-4">
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="../src/images/secretariat/nikunj.jpg" alt="Shoes" /></figure>
+                        <div class="card-body py-[1.4rem] ">
+                            <h2 class="card-title">Nikunj Gupta</h2>
+                            <p>Seceratory General</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="../src/images/secretariat/jinam jain.jpg" alt="Shoes" /></figure>
+                        <div class="card-body py-[1.4rem] ">
+                            <h2 class="card-title">Jinam Jain</h2>
+                            <p>Director General</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl lg:w-0">
+                        <figure><img src="../src/images/secretariat/Rahul Chhabra - Depute Secretary General.jpg" alt="Shoes" /></figure>
+                        <div class="card-body py-[1.4rem] ">
+                            <h2 class="card-title">Rahul Chabra</h2>
+                            <p>Depute Seceratory General</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="../src/images/secretariat/Aditi.jpeg" alt="Shoes" /></figure>
+                        <div class="card-body py-[1.4rem] ">
+                            <h2 class="card-title">Aditi Vishwakarma</h2>
+                            <p>Depute Director Secretory</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="../src/images/secretariat/Aryan Pandey - Auditor General.jpg" alt="Shoes" /></figure>
+                        <div class="card-body py-[1.4rem] ">
+                            <h2 class="card-title">Aryan Pandey</h2>
+                            <p>Auditor General</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="../src/images/secretariat/utsav.jpg" alt="Shoes" /></figure>
+                        <div class="card-body py-[1.4rem] ">
+                            <h2 class="card-title">Utsav Singh Tomar</h2>
+                            <p>Chief Of Delegate Affairs</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="../src/images/secretariat/jai.jpg" alt="Shoes" /></figure>
+                        <div class="card-body py-[1.4rem] ">
+                            <h2 class="card-title">Jai Moryani</h2>
+                            <p>Chief Of Media Relation</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="../src/images/secretariat/sanyam agarwal.jpeg" alt="Shoes" /></figure>
+                        <div class="card-body py-[1.4rem] ">
+                            <h2 class="card-title">Sanyam Agrawal</h2>
+                            <p>Chief Of international Press</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="../src/images/secretariat/priyadarshini-chief-of-staff.jpg" alt="Shoes" /></figure>
+                        <div class="card-body py-[1.4rem] ">
+                            <h2 class="card-title">Priyadarshini Roy</h2>
+                            <p>Chief Of Staff</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="../src/images/secretariat/devangi.jpeg" alt="Shoes" /></figure>
+                        <div class="card-body py-[1.4rem] ">
+                            <h2 class="card-title">Devangi Gajjar</h2>
+                            <p>Chief Of Creative Content</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="../src/images/secretariat/nidhi bhardwaj.jpeg" alt="Shoes" /></figure>
+                        <div class="card-body py-[1.4rem] ">
+                            <h2 class="card-title">Nidhi Bhardwaj</h2>
+                            <p>Chief Of External Relation</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sec-lower mt-8 pt-6 relative">
+                <div class="overflow-x-auto rounded-xl">
+                    <table class="table table-zebra ">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th class="text-[1.2rem]">Name</th>
+                                <th class="text-[1.2rem]">Enrollment No.</th>
+                                <th class="text-[1.2rem]">Favorite Color</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- row 1 -->
+                            <tr class="one">
+                                <th>1</th>
+                                <td>Aashrita Bhasker</td>
+                                <td>IIB2022012</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <!-- row 2 -->
+                            <tr class="two">
+                                <th>2</th>
+                                <td>Aditya Raj Singh</td>
+                                <td>IEC2022054</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <!-- row 3 -->
+                            <tr class="one">
+                                <th>3</th>
+                                <td>Anamika Garg</td>
+                                <td>IFI2022005</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="two">
+                                <th>4</th>
+                                <td>Ayush Saxena</td>
+                                <td>IIB2022032</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="one">
+                                <th>5</th>
+                                <td>Debjyoti Ray</td>
+                                <td>IEC2022111</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="two">
+                                <th>6</th>
+                                <td>Deepanshu Singh </td>
+                                <td>IEC2022117</td>
+                                <td>Under Secretary General</td>
+                            </tr >
+                            <tr class="one">
+                                <th>7</th>
+                                <td>Dimple Bhondekar</td>
+                                <td>IIT2022022</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+
+
+                            <tr class="two">
+                                <th>8</th>
+                                <td>Hrishika Singh</td>
+                                <td>IIT2022127</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="one">
+                                <th>9</th>
+                                <td>Ksshittij Karthik Eslavat</td>
+                                <td>IIT2022275</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="two">
+                                <th>10</th>
+                                <td>Mansvi Sahu</td>
+                                <td>IEC2022019</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="one">
+                                <th>11</th>
+                                <td>Naman Singhal</td>
+                                <td>IEC2022020</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="two">
+                                <th>12</th>
+                                <td>Nupur Panwar</td>
+                                <td>IEC2022088</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="one"> 
+                                <th>13</th>
+                                <td>Rishi Upadhyay</td>
+                                <td>IIT2022013</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="two">
+                                <th>14</th>
+                                <td>Sanjay Paul </td>
+                                <td>IEC2022123</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="one">
+                                <th>15</th>
+                                <td>Shalini Chongdar</td>
+                                <td>IEC2022037</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+
+
+                            <tr class="two">
+                                <th>16</th>
+                                <td>Shashank Patil</td>
+                                <td>IIT2022226</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="one">
+                                <th>17</th>
+                                <td>Tejas Sharma</td>
+                                <td>IIT2022161</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="two">
+                                <th>18</th>
+                                <td>Vaibhav Simha</td>
+                                <td>IIT2022067</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                            <tr class="one">
+                                <th>19</th>
+                                <td>Vraj Shah</td>
+                                <td>IIT2022263</td>
+                                <td>Under Secretary General</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-wrap">
+            <footer class="footer p-10 bg-base-400 text-base-content">
+                <aside>
+                    <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd" class="fill-current">
+                        <path
+                            d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                        </path>
+                    </svg>
+                    <p class="text-3xl font-semibold mt-1">Contact Us</p>
+                    <p class="relative top-[-6px] mb-2">IIITA MUN Social Platforms</p>
+                    <nav>
+
+                        <div class="grid grid-flow-col gap-4">
+                            <a href="sarasva.society@iiita.ac.in"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" class="fill-current">
+                                    <path
+                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                    </path>
+                                </svg></a>
+                            <a href="https://www.instagram.com/sarasva_iiita/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" class="fill-current">
+                                    <path
+                                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                                    </path>
+                                </svg></a>
+                               
+                            <a href="https://www.facebook.com/sarasva.litclub/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" class="fill-current">
+                                    <path
+                                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </nav>
+                </aside>
+                <nav>
+                    <header class="footer-title text-lg">USG Administration</header>
+                    <a class="link link-hover text-[1.2rem] font-bold mb-1">Vraj Shah</a>
+                    <!-- <a class="link link-hover"></a> -->
+                    <a class="link link-hover"> +91-9819506717</a>
+                    <!-- <a class="link link-hover">Advertisement</a> -->
+                </nav>
+                <nav>
+                    <header class="footer-title text-lg">Deputy Director General</header>
+                    <a class="link link-hover text-[1.2rem] font-bold mb-1">Aditi Vishwakarma</a>
+                    <!-- <a class="link link-hover">Contact</a> -->
+                    <a class="link link-hover">+91-7458058306</a>
+                    <!-- <a class="link link-hover">Press kit</a> -->
+                </nav>
+                <nav>
+                    <header class="footer-title text-lg"> USG Hospitality</header>
+                    <a class="link link-hover text-[1.2rem] font-bold mb-1">Ashrita Bhaskar</a>
+                    <!-- <a class="link link-hover">Privacy policy</a> -->
+                    <a class="link link-hover">+91-9948698986</a>
+                </nav>
+            </footer>
+            <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+                <aside>
+                    <p>Made with ❤️ @2023. <br>
+                        All Rights Reserved<span class="ml-2 font-semibold text-md">Developed by: Team MUN IIITA</span></p>
+                </aside>
+            </footer>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+</body>
+
+</html>

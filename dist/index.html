@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>IIITA MUN</title>
+</head>
+
+<body>
+    <!-- component -->
+    <!-- This is an example component -->
+    <div class="max-w-9xl py-2 bg-base-200 navBar relative top-0">
+        <nav class="border-gray-200">
+            <div class="container mx-auto min-w-full flex flex-wrap items-center justify-between navBar-wrap">
+                <a href="#" class="flex">
+                    <img src="../src/images/munlogo.png" alt="" class="h-16 w-16 mr-3">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap">IIITA-MUN</span>
+                </a>
+                <button data-collapse-toggle="mobile-menu" type="button"
+                    class="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
+                    aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
+                    <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+                        <li>
+                            <a href="#about"
+                                class="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded focus:outline-none text-xl"
+                                aria-current="page">About</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto text-xl">Committees<svg
+                                    class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
+                                <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="#committee"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">CCC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#committee"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Lok Sabha</a>
+                                    </li>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="index2.html"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Secretariat</a>
+                        </li>
+                        <li>
+                            <a href="#gallery"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#reg"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Apply</a>
+                        </li>
+                        <li>
+                            <a href="#faq"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 text-xl">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="home w-full h-[90vh]" id="home">
+        <div class="home-wrap w-full h-[90vh] flex flex-col justify-center">
+            <!-- <img src="#" alt="" class="home-img"> -->
+            <div class="home-content flex flex-col justify-center items-center h-[75%]" style="color: aliceblue;">
+                <a href=""><img src="../src/images/logo.png" alt="" class="home-logo"></a>
+                <h1 class="text-5xl my-6">IIITA Model United Nations</h1>
+                <p class="w-10/12 text-center text-xl my-5 text-black font-bold">Effervescence proudly presents to you all the 5th edition of
+                    IIIT Allahabad Model United Nations. Welcome to the official website of IIITA-MUN'23.</p>
+                <!-- <button class=" px-10 py-2 border">Effervescence'23</button> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="about w-full h-auto" id="about">
+        <div class="about-wrap w-full min-h-[90vh] flex flex-col items-center justify-center">
+            <h2 class="text-4xl my-8 py-2">About IIITA MUN</h2>
+            <img src="../src/images/munlogo.png" alt="" class="h-40 w-40 mb-6">
+            <p class="w-[88%] mb-4 text-center">IIITA Model United Nations was the first Model United Nations in the
+                city of Allahabad.
+                Started in 2014, it is an initiative which aims to establish a healthy debating environment for
+                young minds budding with ideas regarding the current political affairs across the globe.
+                Delegates will work with participants from all over the country in a highly competitive environment,
+                in dissecting world affairs and creating policies in a conference of the highest quality.
+                We hope to transform you from stu­dents into future leaders, all the while creating unforgettable
+                memories.
+            </p>
+
+            <p class="w-[88%] mb-8 text-center">
+                To put it simply, Model UN is cos-play for people who find following current affairs equally interesting
+                as a nerd would find his comics. However, MUN conferences differ from Comic Cons in that the delegates
+                actually
+                do use their superpowers of research, critical thinking, public speaking and teamwork to draft solutions
+                to issues
+                that have kept diplomats scratching their heads over the years. It is easy to dismiss MUNs as simply a
+                simulation
+                of the UN framework, but that would only tell the beginning of the story. (Not even the beginning, as
+                modern day
+                MUNs evolved from Model League of Nations, a simulation of the UN's failed predecessor.) With the joint
+                creative forces
+                of innumerable creative minds from high school and college students (and increasing numbers of people
+                beyond)
+                MUNs have evolved and diversified at unthinking proportions over the years. Today, any council - real or
+                fictional,
+                futuristic or historical - that seeks to resolve disputes by means of meaningful diplomacy can be found
+                simulated
+                at a Model UN conference. The Best Delegate and other mentions add a competitive flair to the
+                collaborative environment
+                and help bring out the unprecedented from the council.
+            </p>
+            <div class="regButton w-[88%] text-center mb-6">
+                <a href="#reg"><button class="btn btn-primary">Register</button></a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- accordion reamaining  -->
+    <section class="faq w-full h-auto flex items-center justify-center bg-gray-100 border" id="faq">
+        <div class="faq-wrap w-[88%] py-8 ">
+            <div class="faq-title my-2 py-4 flex justify-center">
+                <h2 class="text-black text-4xl py-2 px-3">FAQs</h2>
+            </div>
+
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    What is Model United Nations?
+                </div>
+                <div class="collapse-content">
+                    <p>Model United Nations (MUN) is an academic simulation of the United Nations that aims to educate
+                        and encourage participants to discuss major issues concerning the world, topics in international
+                        relations, diplomacy and the United Nations agenda.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow ">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    What are the dates of IIITA MUN?
+                </div>
+                <div class="collapse-content">
+                    <p>IIITA MUN is a three day conference and will be held from 24th to 26th of December.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    What will be the manner of conduction of the conference?
+                </div>
+                <div class="collapse-content">
+                    <p>Conference will be held in IIIT, Allhabad campus.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    Is previous experience required to apply as a delegate?
+                </div>
+                <div class="collapse-content">
+                    <p>To apply as a delegate no previous experience is required.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    What awards will be provided at IIITA-MUN this year?
+                </div>
+                <div class="collapse-content">
+                    <p>The awards will be presented at the discretion of the chairs of each committee and will include
+                        one Best Delegate and two Verbal Mentions per committee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="committee flex justify-center bg-blue-50" id="committee">
+        <div class="com-wrap w-[88%] py-4 flex flex-col justify-center items-center">
+            <div class="com-upper mb-6">
+                <h2 class="text-4xl px-4 py-2">Committees</h2>
+            </div>
+            <div class="com-content flex flex-col p-1 w-full">
+                <div class="com-CCC flex flex-col bg-white" id="CCC">
+                    <div class="p-3 bg-blue-gray-100">
+                        <div class=" com-grid grid grid-cols-6 grid-rows-5 gap-3 grid-flow-col ">
+                          <div class="p-1 text-center bg-white row-start-1 row-end-5 col-start-1 col-end-3">
+                            <img src="../src/images/home-img.jpg" alt="" class="object-cover h-full">
+                          </div>
+                          <div class="p-2 text-start bg-white row-start-1 row-end-5 col-start-3 col-end-7">
+                            <h1 class="text-3xl font-semibold p-2 ">CCC</h1>
+                            <p class="text-[1rem] mt-4 pl-2 pr-4">
+                                The Continuous Crisis Committee, often referred to as CCC, plays a pivotal role in Model United Nations
+                                (MUN) simulations. This committee operates on the principle that crises can emerge at any moment, demanding
+                                swift and strategic responses from its delegates. The CCC is known for its dynamic nature, as it is not constrained
+                                by a fixed agenda or specific topic. Instead, participants are immersed in a real-time crisis scenario, which could
+                                range from political conflicts and international emergencies to intricate diplomatic negotiations. 
+                                Delegates must stay alert, adapt to rapidly changing situations, and collaborate with fellow committee members
+                                to devise effective solutions. The Continuous Crisis Committee challenges MUN delegates to think critically, 
+                                hone their diplomatic skills, and navigate the complexities of global politics in a dynamic and engaging manner.
+                            </p>
+                          </div>
+                          <div class="p-2 text-center bg-white row-start-5 row-end-6 col-start-1 col-end-2 flex justify-center items-center">
+                            <p class="text-2xl font-bold ">Agenda :</p>
+                          </div>
+                          <div class="p-2 text-center bg-white row-start-5 row-end-6 col-start-2 col-end-6 flex justify-center items-center">
+                            <p>Global COVID-19 Strategy: Addressing Unrest, Containment, and Economic Reopening.</p>
+                          </div>
+                          <div class="p-2 text-center bg-white row-start-5 row-end-6 col-start-6 col-end-7">
+                            <a href=""><button class="button btn btn-primary">Contry Matrix</button></a>
+                          </div>
+                          <!-- <div class="p-5 text-center bg-white">E</div> -->
+                        </div>
+                      </div>
+                </div>
+
+                <div class="com-sabha flex flex-col bg-white mt-4" id="sabha">
+                    <div class="p-3 bg-blue-gray-100">
+                        <div class=" com-grid grid grid-cols-6 grid-rows-5 gap-3 grid-flow-col ">
+                          
+                          <div class="p-2 text-end bg-white row-start-1 row-end-5 col-start-1 col-end-5">
+                            <h1 class="text-3xl font-semibold p-2 ">Lok Sabha</h1>
+                            <p class="text-[1rem] mt-4 pl-4 pr-2">
+                                Lok Sabha, India's lower house of Parliament, stands as a beacon of democratic representation.
+                                Comprising elected members, it plays a crucial role in shaping the nation's legislative framework. 
+                                These members bring diverse perspectives to the table. Lok Sabha's deliberations and decisions are 
+                                pivotal in addressing India's pressing issues and defining its political course. In the context of this MUN,
+                                understanding Lok Sabha's significance sheds light on the democratic principles that underpin India's governance
+                                and can offer valuable insights into the global discourse on representative institutions.
+                            </p>
+                          </div>
+                          <div class="p-1 text-center bg-white row-start-1 row-end-5 col-start-5 col-end-7">
+                            <img src="../src/images/home-img.jpg" alt="" class="object-cover h-full">
+                          </div>
+                          <div class="p-2 text-center bg-white row-start-5 row-end-6 col-start-1 col-end-2  flex justify-center items-center">
+                            <p class="text-2xl font-bold">Agenda :</p>
+                          </div>
+                          <div class="p-2 text-center bg-white row-start-5 row-end-6 col-start-2 col-end-6 flex justify-center items-center">
+                            <p>Deliberations on the Alignment of Civil and Personal Law Codes in India with respect to Sociocultural Dynamics.</p>
+                          </div>
+                          <div class="p-2 text-center bg-white row-start-5 row-end-6 col-start-6 col-end-7">
+                            <a href=""><button class="button btn btn-primary">Contry Matrix</button></a>
+                          </div>
+                          <!-- <div class="p-5 text-center bg-white">E</div> -->
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="regestration flex justify-center bg-base-100" id="reg">
+        <div class="reg-wrap w-[88%] flex flex-col items-center">
+            <div class="reg-upper mt-8">
+                <h2 class="text-4xl mb-4 py-4 px-2">Regestration Open</h2>
+            </div>
+            <div class="req-content grid grid-cols-2 gap-3 my-8 w-[75%]">
+                <div class="card max-w-96 bg-base-100 shadow-xl image-full h-[41vh]">
+                    <figure><img src="../src/images/home-img.jpg" alt="Shoes" class="object-cover" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">DELEGATE</h2>
+                        <p class="w-[75%] relative top-4 text-white">Delegate registration: Enter personal, committee, payment, and
+                            contact info for our MUN conference.</p>
+                        <div class="card-actions justify-start">
+                            <a href=""><button class="btn btn-primary">Register</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card max-w-96 bg-base-100 shadow-xl image-full h-[41vh]">
+                    <figure><img src="../src/images/home-img.jpg" alt="Shoes" class="object-cover" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">EXECUTIVE BOARD</h2>
+                        <p class="w-[75%] relative top-4 text-white">Join our Executive Board: Register your information for our
+                            MUN conference leadership positions.</p>
+                        <div class="card-actions justify-start">
+                            <a href=""><button class="btn btn-primary">Register</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="gallery w-full h-auto flex justify-around bg-gray-500" id="gallery">
+        <div class="gal-wrap w-[88%] flex justify-center items-center gap-2">
+            <div class="gal-name w-[90%]">
+                <h2 class="text-4xl py-4 mb-4 w-[75%]">GALLERY</h2>
+                <p class="text-black w-[75%]">
+                    Discover the essence of our Model United Nations (MUN) journey through our vibrant gallery.
+                    Dive into the world of diplomacy, debates, and global collaboration by browsing through a
+                    captivating collection of MUN conference photos. Experience the energy, intellect, and international
+                    connections that define our MUN community in these visuals.
+                </p>
+            </div>
+            <div class="gal-content w-[47%] shadow-2xl my-12 py-6 bg-white">
+                <!-- component -->
+                <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+
+                <article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden">
+                    <div
+                        class="rounded-full bg-gray-600 text-white absolute top-5 right-5 text-sm px-2 text-center z-10">
+                        <span x-text="currentIndex"></span>/
+                        <span x-text="images.length"></span>
+                    </div>
+
+                    <template x-for="(image, index) in images">
+                        <figure class="h-96" x-show="currentIndex == index + 1"
+                            x-transition:enter="transition transform duration-300" x-transition:enter-start="opacity-0"
+                            x-transition:enter-end="opacity-100" x-transition:leave="transition transform duration-300"
+                            x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+                            <img :src="image" alt="Image"
+                                class="absolute inset-0 z-10 h-full w-full object-contain opacity-70" />
+                            <!-- <figcaption
+                                class="absolute inset-x-0 bottom-1 z-20 w-96 mx-auto p-4 font-light text-sm text-center tracking-widest leading-snug bg-gray-300 bg-opacity-25">
+                                Any kind of content here!
+                                Primum in nostrane potestate est, quid meminerimus? Nulla erit controversia. Vestri haec
+                                verecundius, illi fortasse constantius. -->
+                            <!-- </figcaption> -->
+                        </figure>
+                    </template>
+
+                    <button @click="back()"
+                        class="absolute left-8 top-[50%] w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
+                        <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 hover:-translate-x-0.5"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <button @click="next()"
+                        class="absolute right-8 top-[50%] w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
+                        <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 hover:translate-x-0.5"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </article>
+                <!-- <img src="../src/images/MUN/" alt=""> -->
+                <script>
+                    document.addEventListener('alpine:init', () => {
+                        Alpine.data('slider', () => ({
+                            currentIndex: 1,
+                            images: [
+                                '../src/images/MUN/1.jpg',
+                                '../src/images/MUN/2.jpg',
+                                '../src/images/MUN/3.jpg',
+                                '../src/images/MUN/4.jpg',
+                                '../src/images/MUN/5.jpg',
+                                '../src/images/MUN/6.jpg',
+                                '../src/images/MUN/7.jpg',
+                                '../src/images/MUN/8.jpg',
+                                '../src/images/MUN/9.jpg',
+                                '../src/images/MUN/10.jpg',
+                                '../src/images/MUN/11.jpg',
+                                '../src/images/MUN/12.jpg',
+                                '../src/images/MUN/13.jpg',
+                                '../src/images/MUN/14.jpg',
+                                '../src/images/MUN/15.jpg',
+                                '../src/images/MUN/16.jpg',
+                                '../src/images/MUN/17.jpg',
+                                '../src/images/MUN/18.jpg',
+                                '../src/images/MUN/19.jpg',
+                                '../src/images/MUN/20.jpg',
+                                '../src/images/MUN/21.jpg',
+                                '../src/images/MUN/22.jpg',
+                                '../src/images/MUN/23.jpg',
+                                '../src/images/MUN/24.jpg',
+                                '../src/images/MUN/25.jpg'
+                            ],
+                            back() {
+                                if (this.currentIndex > 1) {
+                                    this.currentIndex = this.currentIndex - 1;
+                                }
+                            },
+                            next() {
+                                if (this.currentIndex < this.images.length) {
+                                    this.currentIndex = this.currentIndex + 1;
+                                } else if (this.currentIndex <= this.images.length) {
+                                    this.currentIndex = this.images.length - this.currentIndex + 1
+                                }
+                            },
+                        }))
+                    })
+                </script>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-wrap">
+            <footer class="footer p-10 bg-base-100 text-base-content">
+                <aside>
+                    <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd" class="fill-current">
+                        <path
+                            d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                        </path>
+                    </svg>
+                    <h2 class="text-3xl font-semibold mt-1">Contact Us</h2>
+                    <p class="relative top-[-6px] mb-2">IIITA MUN Social Platforms</p>
+                    <nav>
+
+                        <div class="grid grid-flow-col gap-4">
+                            <a href="sarasva.society@iiita.ac.in">
+                                <i></i>
+                            </a>
+                            <a href="https://www.instagram.com/sarasva_iiita/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" class="fill-current">
+                                    <path
+                                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                                    </path>
+                                </svg></a>
+                               
+                            <a href="https://www.facebook.com/sarasva.litclub/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" class="fill-current">
+                                    <path
+                                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </nav>
+                </aside>
+                <nav>
+                    <header class="footer-title text-lg">USG Administration</header>
+                    <a class="link link-hover text-[1.2rem] font-bold mb-1">Vraj Shah</a>
+                    <!-- <a class="link link-hover"></a> -->
+                    <a class="link link-hover"> +91-9819506717</a>
+                    <!-- <a class="link link-hover">Advertisement</a> -->
+                </nav>
+                <nav>
+                    <header class="footer-title text-lg">Deputy Director General</header>
+                    <a class="link link-hover text-[1.2rem] font-bold mb-1">Aditi Vishwakarma</a>
+                    <!-- <a class="link link-hover">Contact</a> -->
+                    <a class="link link-hover">+91-7458058306</a>
+                    <!-- <a class="link link-hover">Press kit</a> -->
+                </nav>
+                <nav>
+                    <header class="footer-title text-lg">USG Hospitality</header>
+                    <a class="link link-hover text-[1.2rem] font-bold mb-1">Ashrita Bhaskar</a>
+                    <!-- <a class="link link-hover">Privacy policy</a> -->
+                    <a class="link link-hover">+91-9948698986</a>
+                </nav>
+            </footer>
+            <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+                <aside>
+                    <p>Made with ❤️ @2023. <br>
+                        All Rights Reserved<span class="ml-2 font-semibold text-md">Developed by: Team MUN IIITA</span></p>
+                </aside>
+            </footer>
+        </div>
+    </section>
+    <!-- <a href="rough.html">afasdvsz</a> -->
+
+    <script src="../src/script.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+</body>
+
+</html>
