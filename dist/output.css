@@ -3182,7 +3182,7 @@ details.collapse summary::-webkit-details-marker {
 
 /* home section  */
 .home-wrap {
-  background-image: url("../src/images/home3.jpg");
+  background-image: url("./images/home3.jpg");
   object-fit:contain;
   background-repeat: no-repeat;
   align-items: center ;
